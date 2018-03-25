@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col-lg-12">
+    <h1>顧客詳細</h1>
+    <dl>
+      <dt>ニックネーム</dt>
+      <dd style="margin:0px 0px 10px 20px"><%= @user.nickname %> <%= @user.nickname %></dd>
+      <dt>性別</dt>
+      <dd style="margin:0px 0px 10px 20px"><%= @user.sex %></dd>
+      <dt>年齢</dt>
+      <dd style="margin:0px 0px 10px 20px"><%= @user.age %></dd>
+      <dt>地域</dt>
+      <dd style="margin:0px 0px 10px 20px"><%= @user.area.name%></dd>
+      <dt>身長</dt>
+      <dd style="margin:0px 0px 10px 20px"><%= @user.height %></dd>
+      <dt>体重</dt>
+      <dd style="margin:0px 0px 10px 20px"><%= @user.weight %></dd>
+
+
+
+
+
+    </dl>
+  
+    <%= link_to '戻る', user_path, class: "btn btn-default" %>
+  </div>
+</div>
