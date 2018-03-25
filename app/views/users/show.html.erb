@@ -14,13 +14,13 @@
       <dd style="margin:0px 0px 10px 20px"><%= @user.height %></dd>
       <dt>体重</dt>
       <dd style="margin:0px 0px 10px 20px"><%= @user.weight %></dd>
-
-
-
+      <dt>地域名</dt>
+      <bb><%= f.collection_select :user_id, Area.all, :id, :name, include_blank: true %></bb>
+      <p><%= form.hidden_field :user_id, value: current_user_id%></p>
 
 
     </dl>
-  
+
     <%= link_to '戻る', user_path, class: "btn btn-default" %>
   </div>
 </div>

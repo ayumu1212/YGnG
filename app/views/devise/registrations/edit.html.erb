@@ -11,8 +11,47 @@
         <%= f.text_field :nickname, autofocus: true, class: "form-control" %>
       </div>
 
+    <div class="field">
+      <span class="sex">性別</span><br>
+    <div class="radio-inline">
+        <%= f.radio_button :sex, :男性, checked: "checked" %>
+        <%= f.label :男性, class: "sex_label" %>
+    </div>
+      <div class="radio-inline">
+        <%= f.radio_button :sex, :女性, checked: "checked" %>
+        <%= f.label :女性, class: "sex_label" %>
+        </div>
+        <div class="radio-inline">
+        <%= f.radio_button :sex, :秘密, checked: "checked" %>
+        <%= f.label :秘密, class: "sex_label" %>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :age, "年齢" %><br />
+      <%= f.text_field :age, autofocus: true, class: "form-control" %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :height, "身長" %><br />
+      <%= f.text_field :height, autofocus: true, class: "form-control" %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :weight, "体重" %><br />
+      <%= f.text_field :weight, autofocus: true, class: "form-control" %>
+    </div>
+
+    <div class="form-group">
+    <%= f.label :area_id, "お住み先" %><br />
+    <%= f.collection_select :area_id, Area.all, :id, :name, { include_blank: "地域を選択してください" },  { class: "form-control" } %>
+    </div>
+
+
+
+
       <div class="form-group">
-        <%= f.label :email, "電子メール" %><br />
+        <%= f.label :email, "Eメール" %><br />
         <%= f.email_field :email, class: "form-control" %>
       </div>
 
