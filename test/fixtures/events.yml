@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  datetime: 2018-03-24 10:08:46
+  member: 1
+  place: MyText
+  part: MyString
+  user_id: 1
+  description: MyText
+
+two:
+  datetime: 2018-03-24 10:08:46
+  member: 1
+  place: MyText
+  part: MyString
+  user_id: 1
+  description: MyText
